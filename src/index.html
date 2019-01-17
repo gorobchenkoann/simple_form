@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <title>MakeIt</title>
+</head>
+<body>
+    <div class="form_wrap">
+        <div class="form_content">
+            <img 
+                class="form_logo"
+                src="assets/images/form-logo.png" 
+                width="56"
+                height="56"
+                alt="Изображение инженера"
+            >
+            <h1 class="form_title">Заказать выезд инженера на объект</h1>
+            <p class="form_subtitle">Произведем бесплатную экспертизу объема работ</p>
+            <form class="form">
+                <div class="form_inputs">
+                    <input class="input" id="name" type="text" placeholder="Ваше имя">
+                    <input class="input" id="phone" type="tel" placeholder="Телефон">  
+                    <input class="input input--adress" id="address" type="text" placeholder="Адрес объекта">                                    
+                    <div class="address_wrap">
+                        <span class="address_element address_placeholder"></span> 
+                        <a href="#" class="address_element address_link" id="address_link">Расположение объекта</a>              
+                        <button class="address_remove" id="address_remove" title="Удалить адрес"></button>                                 
+                    </div>
+                </div>
+                <div class="form_map" id="form_map"></div>
+                <button class="form_submit_button" title="Отправка формы">
+                    Заказать выезд инженера
+                </button>
+                <a class="form_download_link" href="#" title="Буклет о нас">Скачать буклет о нас</a>
+            </form>
+            
+            <div class="features">
+                <h2 class="features_title">Уникальный сервис</h2>
+                <ul class="features_list">
+                    <li class="features_item">
+                        <span class="features_item_icon"></span>
+                        <h3 class="features_item_title">Контроль полного цикла работ</h3>
+                        <p class="features_item_text">Когда всем занимается одна организация, вам спокойней. Плюс еще несколько строчек текста.</p>
+                    </li>
+                    <li class="features_item">
+                        <span class="features_item_icon"></span>
+                        <h3 class="features_item_title">Инженерный контроль объектов</h3>
+                        <p class="features_item_text">Вы можете не беспокоится о внезапном выходе из строя оборудования, и обратиться к нам бесплатно</p>
+                    </li>
+                    <li class="features_item">
+                        <span class="features_item_icon"></span>
+                        <h3 class="features_item_title">Ленэнерго, ПСК, городские и областные инстанции</h3>
+                        <p class="features_item_text">Вам больше не придется проходить процедуру согласования и сдачу объекта</p>
+                    </li>
+                    <li class="features_item">
+                        <span class="features_item_icon"></span>
+                        <h3 class="features_item_title">Поэтапная оплата</h3>
+                        <p class="features_item_text">Вам больше не придется проходить процедуру согласования и сдачу объекта</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="form_close_button" title="Закрыть форму"></button>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0923f90d-a3c8-4dd4-a1f8-ed0299995336&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="js/lib/jquery.validate.min.js"></script>
+    <script src="js/lib/jquery.maskedinput.min.js"></script>
+    <script src="js/bundle.js"></script>
+</body>
+</html>
