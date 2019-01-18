@@ -68,7 +68,7 @@ function cssTranspile() {
 function serve(done) {
     server.init({
         server: {
-            baseDir: './src'
+            baseDir: './dist'
         },
         open: true
     });
